@@ -1,0 +1,12 @@
+def stanton_measure(arr):
+    
+    res = 0
+    counter = 0
+    for i in range(len(arr)):
+        if arr[i] == 1:
+            res+= 1
+
+    for j in range(len(arr)):
+        if arr[j] == res:
+            counter += 1
+    return counter
